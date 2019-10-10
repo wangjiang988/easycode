@@ -1,12 +1,11 @@
-name: Test
+name: retest
 description: test
 author: wangjiang
 version: 1.0.0
 metadata:
-  name: '14'
-  age: '16'
+  w: j
 pathMetadata:
-  path: src
+  p: t
 templates:
   singles:
     - name: create
