@@ -1,0 +1,30 @@
+name: Test
+description: test
+author: wangjiang
+version: 1.0.0
+metadata:
+  name: '14'
+  age: '16'
+pathMetadata:
+  path: src
+templates:
+  singles:
+    - name: create
+      description: 测试更新模板
+      filePath: curd/c.tpl
+    - name: update
+      description: 测试更新文件
+      filePath: curd/u.tpl
+    - name: demo
+      description: 测试模板
+      filePath: demo/demo.tpl
+  groups:
+    - name: curd
+      description: 增删盖查
+      children:
+        - name: create
+          description: 测试更新模板
+          filePath: curd/c.tpl
+        - name: update
+          description: 测试更新文件
+          filePath: curd/u.tpl
