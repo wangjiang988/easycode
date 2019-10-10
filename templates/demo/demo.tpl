@@ -14,7 +14,7 @@
  * now_date        当前日期 格式为YYYY-mm-dd
  * 还有其他配置文件中的根属性和metadata中定义的属性都可以在模板中使用
  * 全局变量通过加root来定义
- * 如： root.now_date, root.author 等等
+ * 如： root.now_date, root.author root.filename_withno_ext(没有后缀名的文件名)) 等等
  */
 
  /**
