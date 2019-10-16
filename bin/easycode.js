@@ -43,6 +43,16 @@ program
     require('../entry/make')(templateName)
   })
 
+/**
+ * 根据模板生成文件
+ */
+program
+.command('path [action] <filename>')
+.description('generate a new file or group files powered by yanjs')
+.action((action, filename) => {
+  require('../entry/path')(action, filename)
+})
+
 
 
 program.on('--help', () => {
