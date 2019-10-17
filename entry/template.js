@@ -1,6 +1,7 @@
 const path = require('path')
 const { Template } = require('../lib/parser/templateParser')
 const Generator = require('../lib/Generator')
+const configAction = require('./config')
 
 module.exports = (action, filepath) => {
     if (action == 'make') makeTemplate(filepath)
@@ -16,5 +17,6 @@ async function makeTemplate (filepath) {
     const template = new Template(filepath, true)
     const generator = new Generator()
     await generator.makeTemplate(template)
+    configAction('refresh', 'template')
 }
 

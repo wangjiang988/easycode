@@ -7,25 +7,49 @@ const questions = [
       type: 'input',
       name: 'name',
       message: '项目名称',
-      default: ''
+      default: '',
+      validate: (val) => {
+        if(val == '') {
+          return '不能为空'
+        }
+        return val
+      }
     },
     {
       type: 'input',
       name: 'description',
       message: '项目描述',
-      default: ''
+      default: '',
+      validate: (val) => {
+        if(val == '') {
+          return '不能为空'
+        }
+        return val
+      }
     },
     {
       type: 'input',
       name: 'author',
       message: '作者',
-      default: ''
+      default: '',
+      validate: (val) => {
+        if(val == '') {
+          return '不能为空'
+        }
+        return val
+      }
     },
     {
       type: 'input',
       name: 'version',
       message: '版本',
-      default: '1.0.0'
+      default: '1.0.0',
+      validate: (val) => {
+        if(val == '') {
+          return '不能为空'
+        }
+        return val
+      }
     }
   ]
 
