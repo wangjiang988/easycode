@@ -44,13 +44,23 @@ program
   })
 
 /**
- * 根据模板生成文件
+ * 路径相关操作
  */
 program
 .command('path [action] <filename>')
 .description('generate a new file or group files powered by yanjs')
 .action((action, filename) => {
   require('../entry/path')(action, filename)
+})
+
+/**
+ * 根据模板生成文件
+ */
+program
+.command('template [action] <filepath>')
+.description('generate a new file or group files powered by yanjs')
+.action((action, filepath) => {
+  require('../entry/template')(action, filepath)
 })
 
 
