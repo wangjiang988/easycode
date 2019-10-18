@@ -17,6 +17,12 @@ templates:
     - name: demo
       description: 测试模板
       filePath: demo/demo.tpl
+    - name: class
+      description: java通用class
+      filePath: java/class.tpl
+    - name: FileEntity
+      description: test
+      filePath: test/FileEntity.tpl
   groups:
     - name: curd
       description: 增删盖查

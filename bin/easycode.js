@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 const chalk = require('chalk')
 const minimist = require('minimist')
-const program = require('commander');
+const program = require('commander')
+const logger = require('../lib/logger')
 
 program
   .usage('<command> [options]')
 
+console.log(chalk.yellow('更多功能请访问：http://www.easycodeforu.com'))
 
 // 这里结束
 
@@ -60,7 +62,6 @@ program
 .command('template [action] <filepath>')
 .description('generate a new file or group files powered by easycode')
 .option('-f, --filename', '文件名称(带后缀名)')
-.parse(process.argv)
 .action((action, filepath) => {
   const args = minimist(process.argv.slice(3));
   require('../entry/template')(action, filepath, args)
