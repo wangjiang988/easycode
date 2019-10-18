@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const chalk = require('chalk')
-
+const minimist = require('minimist')
 const program = require('commander');
 
 program
@@ -38,7 +38,7 @@ program
  */
 program
   .command('make <templateName>')
-  .description('generate a new file or group files powered by yanjs')
+  .description('generate a new file or group files powered by easycode')
   .action((templateName) => {
     require('../entry/make')(templateName)
   })
@@ -48,7 +48,7 @@ program
  */
 program
 .command('path [action] <filename>')
-.description('generate a new file or group files powered by yanjs')
+.description('generate a new file or group files powered by easycode')
 .action((action, filename) => {
   require('../entry/path')(action, filename)
 })
@@ -58,9 +58,12 @@ program
  */
 program
 .command('template [action] <filepath>')
-.description('generate a new file or group files powered by yanjs')
+.description('generate a new file or group files powered by easycode')
+.option('-f, --filename', '文件名称(带后缀名)')
+.parse(process.argv)
 .action((action, filepath) => {
-  require('../entry/template')(action, filepath)
+  const args = minimist(process.argv.slice(3));
+  require('../entry/template')(action, filepath, args)
 })
 
 
@@ -89,6 +92,8 @@ enhanceErrorMessages('optionMissingArgument', (option, flag) => {
 
 
 program.parse(process.argv)
+
+console.log()
 
 if (!process.argv.slice(2).length) {
   program.outputHelp()

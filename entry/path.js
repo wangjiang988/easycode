@@ -12,7 +12,6 @@ module.exports = (action, filename) => {
 async function getPositivePath (filename) {
     const rootPath = path.resolve(process.cwd())
     const filepath = await getFilePath(filename, rootPath)
-    console.log('文件路径为: ', filepath)
     return filepath
 }
 
