@@ -26,6 +26,7 @@ templates:
   groups:
     - name: curd
       description: 增删盖查
+      rootPath: curd # 相对于模板路径
       children:
         - name: create
           description: 测试更新模板

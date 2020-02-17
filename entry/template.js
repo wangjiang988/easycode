@@ -23,9 +23,8 @@ async function makeTemplate (filepath, args) {
     const rootPath = path.resolve(process.cwd())
     filepath = await getFilePath(args.f, rootPath)
   }
- 
+
   console.log(chalk.blue('待复制文件路径为:', filepath))
-  
     
   // 获取文件内容
   const template = new Template(filepath, true)

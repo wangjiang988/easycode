@@ -1,2 +1,8 @@
 name: curd
 description: 增删盖查
+# 公共变量名称: 默认名称
+public_variables: 
+  - type: 'input'
+    name: 'model'
+    message: '模型名'
+    default: 'User'

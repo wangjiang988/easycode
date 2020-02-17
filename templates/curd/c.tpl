@@ -23,7 +23,7 @@
  * 这是一个 create 测试文件可删除
  */
 
-function <{func_name}> () {
+function <{root.group.model}> () {
     let author = '<{root.author}>'
     console.log('作者是:' + author)
 }
