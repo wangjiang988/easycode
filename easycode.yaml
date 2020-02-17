@@ -8,7 +8,7 @@ pathMetadata:
   p: t
 templates:
   singles:
-    - name: create
+    - name: '<{root.group.model}>create'
       description: 测试更新模板
       filePath: curd/c.tpl
     - name: update
@@ -25,7 +25,7 @@ templates:
       rootPath: curd
       description: 增删盖查
       children:
-        - name: create
+        - name: '<{root.group.model}>create'
           description: 测试更新模板
           filePath: curd/c.tpl
         - name: update

@@ -1,7 +1,7 @@
 /**
  *
  * ***** 模板定义                         *****
- * @name create
+ * @name <{root.group.model}>create
  * @description 测试更新模板
  * @ext js 
  * @targetPath  @projectRoot/src
