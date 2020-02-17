@@ -2,7 +2,7 @@
   "name": "@wangjiang988/easycode",
   "version": "1.0.0",
   "description": "auto generate java project",
-  "main": "generateProject.js",
+  "main": "index.js",
   "scripts": {
     "test": "test.js"
   },
