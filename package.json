@@ -1,7 +1,7 @@
 {
   "name": "@wangjiang988/easycode",
-  "version": "1.0.0",
-  "description": "auto generate java project",
+  "version": "1.0.2",
+  "description": "auto generate project",
   "main": "index.js",
   "scripts": {
     "test": "test.js"
@@ -10,12 +10,11 @@
     "easy": "bin/easycode.js"
   },
   "keywords": [
-    "autogenproject"
+    "easycode autogenproject"
   ],
   "author": "wangjiang",
   "license": "ISC",
   "dependencies": {
-    "@vue/cli": "^3.5.1",
     "commander": "^2.19.0",
     "db-migrate": "^0.11.6",
     "db-migrate-mysql": "^1.1.10",
@@ -34,7 +33,6 @@
     "rimraf": "^2.6.3",
     "shelljs": "^0.8.3",
     "user-home": "^2.0.0",
-    "vue-cli": "^2.9.6",
     "yaml": "^1.4.0"
   },
   "directories": {
