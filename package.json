@@ -1,5 +1,5 @@
 {
-  "name": "autogenproject",
+  "name": "@wangjiang988/easycode",
   "version": "1.0.0",
   "description": "auto generate java project",
   "main": "generateProject.js",
@@ -36,5 +36,18 @@
     "user-home": "^2.0.0",
     "vue-cli": "^2.9.6",
     "yaml": "^1.4.0"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangjiang988/easycode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangjiang988/easycode/issues"
+  },
+  "homepage": "https://github.com/wangjiang988/easycode#readme"
 }
