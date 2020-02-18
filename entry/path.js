@@ -1,8 +1,10 @@
 const { getFilePath } = require('../lib/common')
 const path = require('path')
+const log = require('../lib/logger')
 
 module.exports = (action, filename) => {
-    getPositivePath(filename)
+    if(action == 'get')
+        getPositivePath(filename)
 }
 
 /**
@@ -12,6 +14,7 @@ module.exports = (action, filename) => {
 async function getPositivePath (filename) {
     const rootPath = path.resolve(process.cwd())
     const filepath = await getFilePath(filename, rootPath)
+    log.success("路径为:", filepath)
     return filepath
 }
 

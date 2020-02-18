@@ -5,7 +5,7 @@ version: 1.0.0
 metadata:
   w: j
 pathMetadata:
-  p: t
+  project: test
 templates:
   singles:
     - name: '<{root.group.model}>create'

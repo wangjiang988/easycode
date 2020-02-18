@@ -9,19 +9,6 @@ program
 
 console.log(chalk.yellow('更多功能请访问：http://www.easycodeforu.com'))
 
-// 这里结束
-
-// program
-//   .command('reload git')
-//   .description('跟新本地模板项目缓存')
-//   // 根据配置文件生成 不用这个参数
-//   .action((name, cmd) => {
-//     const options = cleanArgs(cmd)
-//     const args = minimist(process.argv.slice(3));
-//     name = args._
-//     require('autoGenCode/lib/reload')(name, options, args)
-//   })
-
 
 /**
  * 初始化配置文件
@@ -46,6 +33,7 @@ program
   })
 
 /**
+ * TODO 这个项目
  * 路径相关操作
  */
 program
