@@ -1,4 +1,4 @@
-const EasyCode = require('../lib/EasyCode')
+const EasyCode = require('../lib/Easycode')
 
 module.exports = (action, forWhat) => {
     if (action == 'init') {

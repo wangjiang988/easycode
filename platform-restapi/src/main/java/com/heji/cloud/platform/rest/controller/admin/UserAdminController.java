@@ -1,16 +1,3 @@
-/** 
- * ***** 模板定义 ******
- * @name    <{root.group.model}>AdminController
- * @description    <{root.group.model}>控制接口类
- * @ext    java
- * @targetPath    @projectRoot/platform-restapi/src/main/java/com/heji/cloud/platform/rest/controller/admin
- *
- * ***** 模板变量定义 ******
- * @variable    uri|/v1/xx|路由
- * @variable    desc|<{root.group.model_desc}>控制接口类|描述
- *
- */
-
 package com.heji.cloud.platform.rest.controller.admin;
 
 import com.wisdomeyes.cloud.foundation.common.object.UUidList;
@@ -31,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /** 
- * @desc <{desc}>  {{desc}}
+ * @desc <{desc}>  用户控制接口类
  *
  * @author <{root.author}>
  * @datetime <{root.now_datetime}>

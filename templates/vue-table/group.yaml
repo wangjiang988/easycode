@@ -1,0 +1,12 @@
+name: vue-table
+description: vue tables
+# 公共变量名称: 默认名称
+public_variables: 
+  - type: 'input'
+    name: 'model'
+    message: '模型名'
+    default: 'user'
+  - type: 'input'
+    name: 'model_desc'
+    message: '模型描述'
+    default: '用户'

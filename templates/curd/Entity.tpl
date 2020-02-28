@@ -4,9 +4,9 @@
  * @description    <{root.group.model}>实体类
  * @ext    java
  * @targetPath    @projectRoot/platform-domain/src/main/java/com/heji/cloud/platform/domain/entity
+ * @javaFieldParser <{root.group.table_name}>
  *
  * ***** 模板变量定义 ******
- * @variable    table_name|表名|table_name
  * @variable    desc|<{root.group.model_desc}>实体类|待生成文件描述
  */
 
@@ -31,9 +31,11 @@ import java.util.List;
 
 
 @Data
-@TableName(value = "<{table_name}>")
+@TableName(value = "<{root.group.table_name}>")
 @ApiModel(value = "<{desc}>")
 public class <{root.group.model}>Entity extends BaseEntity {
+
+      <{root.group.table_fields}>
 
 //    @TableField(value = "company_name")
 //    @ApiModelProperty(value = "企业名称")
