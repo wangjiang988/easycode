@@ -1,0 +1,88 @@
+name: retest
+description: test
+author: wangjiang
+version: 1.0.0
+project_name: carrier
+metadata:
+  module: heji
+  basePackagePath: com/wisdomeyes/cloud
+  basePackage: com.wisdomeyes.cloud
+pathMetadata:
+  project: test
+templates:
+  singles:
+    - name: '<{root.group.model}>AdminController'
+      description: '<{root.group.model}>控制接口类'
+      filePath: curd/Controller.tpl
+    - name: '<{root.group.model}>Entity'
+      description: '<{root.group.model}>实体类'
+      filePath: curd/Entity.tpl
+    - name: '<{root.group.model}>Mapper'
+      description: mapper类
+      filePath: curd/Mapper.tpl
+    - name: '<{root.group.model}>Mapper'
+      description: MapperXml文件
+      filePath: curd/MapperXml.tpl
+    - name: '<{root.group.model}>Service'
+      description: 服务接口类
+      filePath: curd/Service.tpl
+    - name: '<{root.group.model}>ServiceImpl'
+      description: 服务实现类
+      filePath: curd/ServiceImpl.tpl
+    - name: demo
+      description: 测试模板
+      filePath: demo/demo.tpl
+    - name: class
+      description: java通用class
+      filePath: java/class.tpl
+    - name: '<{root.group.model}>'
+      description: '<{root.group.model}>接口类'
+      filePath: vue-table/api.tpl
+    - name: entity-compo
+      description: '<{root.group.model}>实体新增编辑vue'
+      filePath: vue-table/entity-compo.tpl
+    - name: index
+      description: '<{root.group.model}>入口'
+      filePath: vue-table/index.tpl
+    - name: tables
+      description: '<{root.group.model}>列表vue'
+      filePath: vue-table/tables.tpl
+  groups:
+    - name: curd
+      rootPath: curd
+      description: 增删盖查
+      children:
+        - name: '<{root.group.model}>AdminController'
+          description: '<{root.group.model}>控制接口类'
+          filePath: curd/Controller.tpl
+        - name: '<{root.group.model}>Entity'
+          description: '<{root.group.model}>实体类'
+          filePath: curd/Entity.tpl
+        - name: '<{root.group.model}>Mapper'
+          description: mapper类
+          filePath: curd/Mapper.tpl
+        - name: '<{root.group.model}>Mapper'
+          description: MapperXml文件
+          filePath: curd/MapperXml.tpl
+        - name: '<{root.group.model}>Service'
+          description: 服务接口类
+          filePath: curd/Service.tpl
+        - name: '<{root.group.model}>ServiceImpl'
+          description: 服务实现类
+          filePath: curd/ServiceImpl.tpl
+    - name: vue-table
+      rootPath: vue-table
+      description: vue tables
+      children:
+        - name: '<{root.group.model}>'
+          description: '<{root.group.model}>接口类'
+          filePath: vue-table/api.tpl
+        - name: entity-compo
+          description: '<{root.group.model}>实体新增编辑vue'
+          filePath: vue-table/entity-compo.tpl
+        - name: index
+          description: '<{root.group.model}>入口'
+          filePath: vue-table/index.tpl
+        - name: tables
+          description: '<{root.group.model}>列表vue'
+          filePath: vue-table/tables.tpl

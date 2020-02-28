@@ -27,7 +27,9 @@ async function makeTemplate (filepath, args) {
   console.log(chalk.blue('待复制文件路径为:', filepath))
     
   // 获取文件内容
-  const template = new Template(filepath, true)
+  const easycode = new EasyCode(true)
+  easycode.init()
+  const template = new Template(filepath, easycode)
   const generator = new Generator()
   await generator.makeTemplate(template)
   configAction('refresh', 'template')
