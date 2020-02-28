@@ -2,8 +2,11 @@ name: retest
 description: test
 author: wangjiang
 version: 1.0.0
+project_name: carrier
 metadata:
   module: heji
+  basePackagePath: com/wisdomeyes/cloud
+  basePackage: com.wisdomeyes.cloud
 pathMetadata:
   project: test
 templates:

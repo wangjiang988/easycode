@@ -3,14 +3,14 @@
  * @name    <{root.group.model}>Entity
  * @description    <{root.group.model}>实体类
  * @ext    java
- * @targetPath    @projectRoot/platform-domain/src/main/java/com/heji/cloud/platform/domain/entity
+ * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/domain/entity
  * @javaFieldParser <{root.group.table_name}>
  *
  * ***** 模板变量定义 ******
  * @variable    desc|<{root.group.model_desc}>实体类|待生成文件描述
  */
 
-package com.heji.cloud.platform.domain.entity;
+package <{root.basePackage}>.<{root.project_name}>.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

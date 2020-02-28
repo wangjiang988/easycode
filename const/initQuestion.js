@@ -50,6 +50,18 @@ const questions = [
       }
       return true
     }
+  },
+  {
+    type: 'input',
+    name: 'project_name',
+    message: '项目英文名(将作为某写路径的前缀使用)',
+    default: '',
+    validate: (val) => {
+      if(val == '') {
+        return '不能为空'
+      }
+      return true
+    }
   }
 ]
 

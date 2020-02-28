@@ -3,20 +3,20 @@
  * @name    <{root.group.model}>ServiceImpl
  * @description    服务实现类
  * @ext    java
- * @targetPath    @projectRoot/platform-domain/src/main/java/com/heji/cloud/platform/domain/service/impl
+ * @targetPath    @projectRoot/platform-domain/src/main/java/<{root.basePackage}>.<{root.project_name}>/domain/service/impl
  *
  * ***** 模板变量定义 ******
  * @variable    desc|<{root.group.model_desc}>服务实现类|待生成文件描述
  */
 
-package com.heji.cloud.platform.domain.service.impl;
+package <{root.basePackage}>.<{root.project_name}>.domain.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.wisdomeyes.cloud.foundation.common.base.BaseServiceImpl;
 import com.wisdomeyes.cloud.foundation.common.util.CommonUtils;
-import com.heji.cloud.platform.domain.entity.<{root.group.model}>Entity;
-import com.heji.cloud.platform.domain.mapper.<{root.group.model}>Mapper;
-import com.heji.cloud.platform.domain.service.<{root.group.model}>Service;
+import <{root.basePackage}>.<{root.project_name}>.domain.entity.<{root.group.model}>Entity;
+import <{root.basePackage}>.<{root.project_name}>.domain.mapper.<{root.group.model}>Mapper;
+import <{root.basePackage}>.<{root.project_name}>.domain.service.<{root.group.model}>Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -3,7 +3,7 @@
  * @name    <{root.group.model}>AdminController
  * @description    <{root.group.model}>控制接口类
  * @ext    java
- * @targetPath    @projectRoot/platform-restapi/src/main/java/com/heji/cloud/platform/rest/controller/admin
+ * @targetPath    @projectRoot/<{root.project_name}>-restapi/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/rest/controller/admin
  *
  * ***** 模板变量定义 ******
  * @variable    uri|/v1/xx|路由
@@ -11,7 +11,7 @@
  *
  */
 
-package com.heji.cloud.platform.rest.controller.admin;
+package <{root.basePackage}>.<{root.project_name}>.rest.controller.admin;
 
 import com.wisdomeyes.cloud.foundation.common.object.UUidList;
 import com.wisdomeyes.cloud.foundation.common.output.MPage;
@@ -21,8 +21,8 @@ import com.wisdomeyes.cloud.foundation.common.util.CommonUtils;
 import com.wisdomeyes.cloud.foundation.config.annotation.LogTrack;
 import com.wisdomeyes.cloud.foundation.excel.DynamicOneSheetEasyExcel;
 import com.wisdomeyes.cloud.foundation.excel.OneSheetEasyExcel;
-import com.heji.cloud.platform.domain.entity.<{root.group.model}>Entity;
-import com.heji.cloud.platform.domain.service.<{root.group.model}>Service;
+import <{root.basePackage}>.<{root.project_name}>.domain.entity.<{root.group.model}>Entity;
+import <{root.basePackage}>.<{root.project_name}>.domain.service.<{root.group.model}>Service;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
