@@ -1,11 +1,11 @@
 name: curd
 description: 增删盖查
 mysql:
-  host: '222.92.16.3'
-  port: '33061'
+  host: '47.105.241.108'
+  port: '33060'
   user: 'root'
   password: '123456'
-  database: 'snd_carrier_center'
+  database: 'wisdomeyes-tuancai'
 # 公共变量名称: 默认名称
 public_variables: 
   - type: 'input'

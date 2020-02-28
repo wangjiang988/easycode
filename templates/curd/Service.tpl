@@ -3,7 +3,7 @@
  * @name    <{root.group.model}>Service
  * @description    服务接口类
  * @ext    java
- * @targetPath    @projectRoot/platform-domain/src/main/java/<{root.basePackage}>.<{root.project_name}>/domain/service
+ * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/domain/service
  *
  * ***** 模板变量定义 ******
  * @variable    desc|<{root.group.model_desc}>服务接口|待生成文件描述

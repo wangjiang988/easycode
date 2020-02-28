@@ -3,7 +3,7 @@
  * @name    <{root.group.model}>Mapper
  * @description    MapperXml文件
  * @ext    xml
- * @targetPath    @projectRoot/<{root.project_names}>-domain/src/main/resources/mapper
+ * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/resources/mapper
  *
  * ***** 模板变量定义 ******
  * @variable    desc|<{root.group.model_desc}>Mapper对象|待生成文件描述

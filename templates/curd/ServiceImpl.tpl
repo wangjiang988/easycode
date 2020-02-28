@@ -3,9 +3,9 @@
  * @name    <{root.group.model}>ServiceImpl
  * @description    服务实现类
  * @ext    java
- * @targetPath    @projectRoot/platform-domain/src/main/java/<{root.basePackage}>.<{root.project_name}>/domain/service/impl
+ * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/domain/service/impl
  *
- * ***** 模板变量定义 ******
+ * ***** 模板变量定义 ******s
  * @variable    desc|<{root.group.model_desc}>服务实现类|待生成文件描述
  */
 
