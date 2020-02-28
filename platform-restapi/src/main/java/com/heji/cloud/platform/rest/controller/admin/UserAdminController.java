@@ -8,8 +8,8 @@ import com.wisdomeyes.cloud.foundation.common.util.CommonUtils;
 import com.wisdomeyes.cloud.foundation.config.annotation.LogTrack;
 import com.wisdomeyes.cloud.foundation.excel.DynamicOneSheetEasyExcel;
 import com.wisdomeyes.cloud.foundation.excel.OneSheetEasyExcel;
-import com.heji.cloud.platform.domain.entity.<{root.group.model}>Entity;
-import com.heji.cloud.platform.domain.service.<{root.group.model}>Service;
+import com.heji.cloud.platform.domain.entity.UserEntity;
+import com.heji.cloud.platform.domain.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -18,27 +18,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /** 
- * @desc <{desc}>  用户控制接口类
+ * @desc 用户控制接口类
  *
- * @author <{root.author}>
- * @datetime <{root.now_datetime}>
+ * @author wangjiang
+ * @datetime 2020-02-28 13:47:13
  */
 
 
 @RestController
-@RequestMapping("<{uri}>")
-@Api(value = "<{uri}>", tags = "<{desc}>")
-public class <{root.group.model}>AdminController {
-    private static Logger logger = LoggerFactory.getLogger(<{root.group.model}>AdminController.class);
+@RequestMapping("/v1/xx")
+@Api(value = "/v1/xx", tags = "用户控制接口类")
+public class UserAdminController {
+    private static Logger logger = LoggerFactory.getLogger(UserAdminController.class);
 
     @Autowired
-    private <{root.group.model}>Service <{root.group.model_lower}>Service;
+    private UserService userService;
 
     @GetMapping("/all")
     @LogTrack
     @ApiOperation("所有列表")
-    public Result list(<{root.group.model}>Entity qo) {
-        return ResultGenerator.genSuccessResult(<{root.group.model_lower}>Service.baseList());
+    public Result list(UserEntity qo) {
+        return ResultGenerator.genSuccessResult(userService.baseList());
     }
 
     @LogTrack
@@ -48,8 +48,8 @@ public class <{root.group.model}>AdminController {
             @RequestParam(required = false, defaultValue = "1") Integer pageNum,
             @RequestParam(required = false, defaultValue = "10") Integer pageSize
     ) {
-        <{root.group.model}>Entity qo = new <{root.group.model}>Entity();
-        MPage<<{root.group.model}>Entity> page = <{root.group.model_lower}>Service.basePage(pageNum, pageSize, qo);
+        UserEntity qo = new UserEntity();
+        MPage<UserEntity> page = userService.basePage(pageNum, pageSize, qo);
         return ResultGenerator.genSuccessResult(page);
     }
 
@@ -57,34 +57,34 @@ public class <{root.group.model}>AdminController {
     @LogTrack
     @ApiOperation("记录ID查询")
     public Result get(@PathVariable("uuid") String uuid) {
-        return ResultGenerator.genSuccessResult(<{root.group.model_lower}>Service.getById(uuid));
+        return ResultGenerator.genSuccessResult(userService.getById(uuid));
     }
 
     @PostMapping("")
     @LogTrack
     @ApiOperation("新增")
-    public Result save(@RequestBody <{root.group.model}>Entity entity) {
-        return ResultGenerator.genSuccessResult(<{root.group.model_lower}>Service.baseSave(entity));
+    public Result save(@RequestBody UserEntity entity) {
+        return ResultGenerator.genSuccessResult(userService.baseSave(entity));
     }
 
     @PutMapping("")
     @LogTrack
     @ApiOperation("修改")
-    public Result update(@RequestBody <{root.group.model}>Entity entity) {
-        return ResultGenerator.genSuccessResult(<{root.group.model_lower}>Service.baseSave(entity));
+    public Result update(@RequestBody UserEntity entity) {
+        return ResultGenerator.genSuccessResult(userService.baseSave(entity));
     }
 
     @DeleteMapping("/{uuid}")
     @LogTrack
     @ApiOperation("删除")
     public Result delete(@PathVariable("uuid") String uuid) {
-        return ResultGenerator.genSuccessResult(<{root.group.model_lower}>Service.removeById(uuid));
+        return ResultGenerator.genSuccessResult(userService.removeById(uuid));
     }
 
     @DeleteMapping("/batch")
     @LogTrack
     @ApiOperation("批量删除")
     public Result deleteBatch(@RequestBody UUidList uUidList) {
-        return ResultGenerator.genSuccessResult(<{root.group.model_lower}>Service.baseBatchSoftRemoveByUUidList(uUidList));
+        return ResultGenerator.genSuccessResult(userService.baseBatchSoftRemoveByUUidList(uUidList));
     }
 }

@@ -31,7 +31,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /** 
- * @desc <{desc}>  {{desc}}
+ * @desc <{desc}>
  *
  * @author <{root.author}>
  * @datetime <{root.now_datetime}>

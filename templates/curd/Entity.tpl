@@ -35,10 +35,11 @@ import java.util.List;
 @ApiModel(value = "<{desc}>")
 public class <{root.group.model}>Entity extends BaseEntity {
 
-      <{root.group.table_fields}>
+    <{#root.group.table_fields}>
+    @TableField(value = "<{COLUMN_NAME}>")
+    @ApiModelProperty(value = "<{COLUMN_COMMENT}>")
+    private <{COLUMN_TYPE}> <{COLUMN_FIELD}>;
 
-//    @TableField(value = "company_name")
-//    @ApiModelProperty(value = "企业名称")
-//    private String companyName;
+    <{/root.group.table_fields}>
 
 }
