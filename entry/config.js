@@ -23,6 +23,7 @@ function refresh (what) {
 }
 
 function refreshTemplate(){
+
   const easycode = new EasyCode(true)
   easycode.reloadTemplateConfig()
 }
