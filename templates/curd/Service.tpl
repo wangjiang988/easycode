@@ -1,6 +1,7 @@
 /** 
  * ***** 模板定义 ******
- * @name    <{root.group.model}>Service
+ * @name    Service
+ * @filename    <{root.group.model}>Service
  * @description    服务接口类
  * @ext    java
  * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/domain/service

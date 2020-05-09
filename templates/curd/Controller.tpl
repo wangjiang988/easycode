@@ -1,6 +1,7 @@
 /** 
  * ***** 模板定义 ******
- * @name    <{root.group.model}>AdminController
+ * @name    AdminController
+ * @filename    <{root.group.model}>AdminController
  * @description    <{root.group.model}>控制接口类
  * @ext    java
  * @targetPath    @projectRoot/<{root.project_name}>-restapi/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/rest/controller/admin

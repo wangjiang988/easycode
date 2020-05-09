@@ -1,6 +1,7 @@
 /** 
  * ***** 模板定义 ******
- * @name    <{root.group.model}>ServiceImpl
+ * @name    ServiceImpl
+ * @filename    <{root.group.model}>ServiceImpl
  * @description    服务实现类
  * @ext    java
  * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/domain/service/impl

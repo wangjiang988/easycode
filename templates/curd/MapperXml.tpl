@@ -1,6 +1,7 @@
 /** 
  * ***** 模板定义 ******
- * @name    <{root.group.model}>Mapper
+ * @name    Mapper
+ * @filename    <{root.group.model}>Mapper
  * @description    MapperXml文件
  * @ext    xml
  * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/resources/mapper

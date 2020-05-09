@@ -1,6 +1,7 @@
 /** 
  * ***** 模板定义 ******
- * @name    <{root.group.model}>Mapper
+ * @name    Mapper
+ * @filename    <{root.group.model}>Mapper
  * @description    mapper类
  * @ext    java
  * @targetPath    @projectRoot/<{root.project_name}>-domain/src/main/java/<{root.metadata.basePackagePath}>/<{root.project_name}>/domain/mapper

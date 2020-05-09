@@ -9,3 +9,5 @@ easy make  模板名
 
 ## 制作模板 
 easy template make 文件路径
+
+发布：
