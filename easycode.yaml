@@ -11,22 +11,22 @@ pathMetadata:
   project: test
 templates:
   singles:
-    - name: '<{root.group.model}>AdminController'
+    - name: AdminController
       description: '<{root.group.model}>控制接口类'
       filePath: curd/Controller.tpl
-    - name: '<{root.group.model}>Entity'
+    - name: Entity
       description: '<{root.group.model}>实体类'
       filePath: curd/Entity.tpl
-    - name: '<{root.group.model}>Mapper'
+    - name: Mapper
       description: mapper类
       filePath: curd/Mapper.tpl
-    - name: '<{root.group.model}>Mapper'
+    - name: Mapper
       description: MapperXml文件
       filePath: curd/MapperXml.tpl
-    - name: '<{root.group.model}>Service'
+    - name: Service
       description: 服务接口类
       filePath: curd/Service.tpl
-    - name: '<{root.group.model}>ServiceImpl'
+    - name: ServiceImpl
       description: 服务实现类
       filePath: curd/ServiceImpl.tpl
     - name: demo
@@ -52,22 +52,22 @@ templates:
       rootPath: curd
       description: 增删盖查
       children:
-        - name: '<{root.group.model}>AdminController'
+        - name: AdminController
           description: '<{root.group.model}>控制接口类'
           filePath: curd/Controller.tpl
-        - name: '<{root.group.model}>Entity'
+        - name: Entity
           description: '<{root.group.model}>实体类'
           filePath: curd/Entity.tpl
-        - name: '<{root.group.model}>Mapper'
+        - name: Mapper
           description: mapper类
           filePath: curd/Mapper.tpl
-        - name: '<{root.group.model}>Mapper'
+        - name: Mapper
           description: MapperXml文件
           filePath: curd/MapperXml.tpl
-        - name: '<{root.group.model}>Service'
+        - name: Service
           description: 服务接口类
           filePath: curd/Service.tpl
-        - name: '<{root.group.model}>ServiceImpl'
+        - name: ServiceImpl
           description: 服务实现类
           filePath: curd/ServiceImpl.tpl
     - name: vue-table
