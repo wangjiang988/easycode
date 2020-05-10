@@ -5,11 +5,13 @@ const Generator = require('../lib/Generator')
 const { getFilePath } = require('../lib/common')
 const configAction = require('./config')
 
+// easy template pull 
 module.exports = (action, filepath, args) => {
   if(args.f) {
     action = args._
   }
   if (action == 'make') makeTemplate(filepath, args)
+  else if (action == 'pull') pullGit(filepath, args)
   else makeTemplate(filepath, args)
 }
 

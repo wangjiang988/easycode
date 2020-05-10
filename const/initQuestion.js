@@ -62,6 +62,30 @@ const questions = [
       }
       return true
     }
+  },
+  {
+    type: 'input',
+    name: 'git_path',
+    message: '模板地址(将拉取作为templates下的模板的初始模板)',
+    default: '',
+    validate: (val) => {
+      if(val == '') {
+        return '不能为空'
+      }
+      return true
+    }
+  },
+  {
+    type: 'input',
+    name: 'git_branch',
+    message: '模板git分支(拉取分支)',
+    default: 'master',
+    validate: (val) => {
+      if(val == '') {
+        return '不能为空'
+      }
+      return true
+    }
   }
 ]
 

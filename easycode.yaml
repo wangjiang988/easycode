@@ -9,6 +9,9 @@ metadata:
   basePackage: com.wisdomeyes.cloud
 pathMetadata:
   project: test
+tplGit:
+  path: xxx.git
+  branch: master
 templates:
   singles:
     - name: AdminController

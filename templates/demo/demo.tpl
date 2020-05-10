@@ -1,7 +1,8 @@
 /**
  *
  * ***** 模板定义                         *****
- * @name demo
+ * @name demo 
+ * @filename demo 即将生成的目标名称 可含有变量 如:<{root.model_name}>demo
  * @description 测试模板
  * @ext js 
  * @targetPath  @projectRoot/src

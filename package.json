@@ -10,7 +10,7 @@
     "easy": "bin/easycode.js"
   },
   "keywords": [
-    "easycode autogenproject"
+    "easy autogenproject"
   ],
   "author": "wangjiang",
   "license": "ISC",
