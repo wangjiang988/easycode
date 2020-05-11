@@ -66,12 +66,12 @@ const questions = [
   {
     type: 'input',
     name: 'git_path',
-    message: '模板地址(将拉取作为templates下的模板的初始模板)',
+    message: '模板地址(将拉取作为templates下的模板的初始模板，没有直接回车)',
     default: '',
     validate: (val) => {
-      if(val == '') {
-        return '不能为空'
-      }
+      // if(val == '') {
+      //   return '不能为空'
+      // }
       return true
     }
   },

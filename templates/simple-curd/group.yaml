@@ -1,0 +1,26 @@
+name: simple-curd
+description: 简单增删盖查-不继承BaseEntity,没有controller
+mysql:
+  host: '127.0.0.1'
+  port: '33060'
+  user: 'root'
+  password: 'Root@123'
+  database: 'snd_platform_center_v2'
+# 公共变量名称: 默认名称
+public_variables: 
+  - type: 'input'
+    name: 'table_name'
+    message: '表名'
+    default: 'prefix_tablename'
+  - type: 'input'
+    name: 'model'
+    message: '模型名'
+    default: 'User'
+  - type: 'input'
+    name: 'model_lower'
+    message: '模型名小写'
+    default: 'user'
+  - type: 'input'
+    name: 'model_desc'
+    message: '模型名描述'
+    default: '用户'
